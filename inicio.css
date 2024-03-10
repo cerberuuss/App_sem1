@@ -1,0 +1,137 @@
+/* ESTULOS GENERALES */
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+p{
+    color: #ff9900;
+}
+h1{
+    color: #ff9900;
+}
+h3{
+    color:#ff9900;
+}
+body {
+    margin: 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #181818;
+}
+
+footer {
+    display:block;
+    margin-top: 50px;
+    padding-top: 30px;
+    width: 100%;
+    height: 150px;
+    border-top: 1px solid black;
+    background-color: #313131;
+}
+
+.box {
+    width: 75%;
+    margin-top: 1%;
+    margin-bottom: 5.5%;
+}
+.boxbanner {
+    width: 50%;
+    margin-top: 3%;
+    margin-bottom: 3%;
+}
+.box_cat {
+    width: 75%;
+    margin-top: 1%;
+    margin-bottom: 7%;
+}
+.box_juego {
+    width: 75%;
+    margin-top: 8%;
+    margin-bottom: 9%;
+}
+
+.espacio {
+    height: 50px;
+}
+
+/* BARRA DE NAVEGACIÓN */
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    width: 100%;
+    background-color:#313131;
+  }
+  
+  li {
+    float: left;
+  }
+  
+  li a {
+    display: block;
+    color:#ff9900;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  li a:hover {
+    background-color:#454545;
+  }
+
+/* TITULO */
+#titulo_pg1 {
+    text-align: center;
+}
+
+#subtit_pg1 {
+    text-align: center;
+}
+
+/* SECCIÓN CATEGORIAS */
+.filaCate {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 30px;
+}
+
+.boxCate {
+    width: 25%;
+    height: 250px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.imgCate {
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+}
+
+.filtroCate {
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    position: absolute;
+    border-radius: 15px;
+    top: 0px;
+    opacity: 0.4;
+    transition: 0.3s;
+}
+
+.filtroCate:hover {
+    opacity: 0.6;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.titCate {
+    position: absolute;
+    /* top: 25%; */
+    color: white;
+}
