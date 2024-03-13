@@ -27,23 +27,29 @@
     <!-- Formulario -->
     <div>
         <fieldset>
-            <legend>Formulario de Registro de Usuario</legend><br>
-            <label>Nombre</label><br>
-            <input type="text" name="nombre_completo" placeholder="Nombre completo"><br><br>
-            <label>Nombre usuario</label><br>
-            <input type="text" name="nombre_usuario"><br><br>
-            <label>E-mail</label><br>
-            <input type="email" name="email"><br><br>
-            <label>Contraseña</label><br>
-            <input type="password" name="pass1"><br><br>
-            <label>Reingrese su contraseña</label><br>
-            <input type="password" name="pass2"><br><br>
-            <label>Fecha de nacimiento</label><br>
-            <input type="date" name="fecha_nac"><br><br>
-            <label>Direccion de despacho</label><br>
-            <input type="text" name="direccion"><br><br>
-            <button type="reset">Limpiar</button>
-            <button type="submit">Enviar</button>
+            <form action="" method="POST" id="form">
+                <legend>Formulario de Registro de Usuario</legend><br>
+                <label>Nombre</label><br>
+                <input type="text" name="nombre_completo" id=nombre placeholder="Nombre completo"><br><br>
+                <label>Nombre usuario</label><br>
+                <input type="text" name="nombre_usuario" id="usuario"><br><br>
+                <label>E-mail</label><br>
+                <input type="email" name="email" id="email"><br><br>
+                <label>Contraseña</label><br>
+                <input type="password" name="pass1" id="pass1"><br><br>
+                <label>Reingrese su contraseña</label><br>
+                <input type="password" name="pass2" id="pass2"><br><br>
+                <label>Fecha de nacimiento</label><br>
+                <input type="date" name="fecha_nac" id="f_nac"><br><br>
+                <label>Direccion de despacho</label><br>
+                <input type="text" name="direccion" id="direccion"><br><br>
+                <button type="reset">Limpiar</button>
+                <button type="submit">Enviar</button>
+                <p class="warning" id="warnings"></p>
+            </form>
+            
+            <script src="formulario.js"></script>
+
         </fieldset>
     </div>
     <!-- footer -->
