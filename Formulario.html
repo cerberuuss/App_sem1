@@ -5,58 +5,92 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="inicio.css">
+    <link rel="stylesheet" href="css_bootstrap/bootstrap.min.css">
     <title>¡DuocPlay!</title>
 </head>
+
 <body>
     <!-- Barra de navegación -->
     <ul>
         <li><a href="inicio.html">
-            <img src="imgs/img_logo.png" style="height: 50px" />
-        </a></li>
+                <img src="imgs/img_logo.png" style="height: 50px" />
+            </a></li>
         <div style="float: right;">
-        <li><a href="inicio.html">Categorías</a></li>
-        <li><a href="#">Sobre Nosotros</a></li>
-        <li><a href="#">Contáctanos</a></li>
+            <li><a href="inicio.html">Categorías</a></li>
+            <li><a href="#">Sobre Nosotros</a></li>
+            <li><a href="#">Contáctanos</a></li>
         </div>
-      </ul>
+    </ul>
+
     <!-- Titulo -->
     <div class="boxbanner">
-        <h1 id="titulo_pg1">!Bienvenido a DuocPlay!</h1>
-        <p id="subtit_pg1">Busca lo que necesitas en nuestra amplia gama de videojuegos.</p>
+        <h1 id="titulo_pg1">Registro de usuario</h1>
     </div>
-    <!-- Formulario -->
-    <div>
-        <fieldset>
-            <form action="" method="POST" id="form">
-                <legend>Formulario de Registro de Usuario</legend><br>
-                <label>Nombre</label><br>
-                <input type="text" name="nombre_completo" id=nombre placeholder="Nombre completo"><br><br>
-                <label>Nombre usuario</label><br>
-                <input type="text" name="nombre_usuario" id="usuario"><br><br>
-                <label>E-mail</label><br>
-                <input type="email" name="email" id="email"><br><br>
-                <label>Contraseña</label><br>
-                <input type="password" name="pass1" id="pass1"><br><br>
-                <label>Reingrese su contraseña</label><br>
-                <input type="password" name="pass2" id="pass2"><br><br>
-                <label>Fecha de nacimiento</label><br>
-                <input type="date" name="fecha_nac" id="f_nac"><br><br>
-                <label>Direccion de despacho</label><br>
-                <input type="text" name="direccion" id="direccion"><br><br>
-                <button type="reset">Limpiar</button>
-                <button type="submit">Enviar</button>
-                <p class="warning" id="warnings"></p>
-            </form>
-            
-            <script src="formulario.js"></script>
 
-        </fieldset>
+    <!-- Formulario -->
+    <div class="row w-100 d-flex">
+        <form class="col-8 border m-auto" action="" method="POST" id="formRegistro">
+            <fieldset>
+                <legend>Registro de usuario</legend>
+                <!-- Nombre y apellido -->
+                <div class="mb-3">
+                    <label for="nombre_completo" class="form-label">Nombre y apellido:</label>
+                    <input type="text" name="nombre_completo" id="nombre_completo" class="form-control"
+                        placeholder="Nombre y apellido">
+                </div>
+                <!-- Nombre de usuario -->
+                <div class="mb-3">
+                    <label for="nombre_usuario" class="form-label">Nombre de usuario:</label>
+                    <input type="text" name="nombre_usuario" id="nombre_usuario" class="form-control"
+                        placeholder="Nombre de usuario">
+                </div>
+                <!-- Correo -->
+                <div class="mb-3">
+                    <label for="email" class="form-label">Correo:</label>
+                    <input type="email" name="email" id="email" class="form-control" placeholder="Correo">
+                </div>
+                <!-- Contraseña -->
+                <div class="mb-3">
+                    <label for="pass1" class="form-label">Contraseña:</label>
+                    <input type="password" name="pass1" id="pass1" class="form-control" placeholder="Constraseña">
+                </div>
+                <!-- Repetir contraseña -->
+                <div class="mb-3">
+                    <label for="pass2" class="form-label">Repetir contraseña:</label>
+                    <input type="password" name="pass2" id="pass2" class="form-control"
+                        placeholder="Repetir constraseña">
+                </div>
+                <!-- Fecha de nacimiento -->
+                <div class="mb-3">
+                    <label for="fecha_nac" class="form-label">Fecha de nacimiento:</label>
+                    <input type="date" name="fecha_nac" id="fecha_nac" class="form-control"
+                        placeholder="Fecha de nacimiento">
+                </div>
+                <!-- Dirección de despacho -->
+                <div class="mb-3">
+                    <label for="direccion" class="form-label">Dirección de despacho:</label>
+                    <input type="text" name="direccion" id="direccion" class="form-control"
+                        placeholder="Dirección de despacho">
+                </div>
+                <!-- Botones -->
+                <button type="submit" class="btn btn-primary">Enviar</button>
+                <button type="reset" class="btn btn-primary">Limpiar</button>
+                <p class="warning" id="warnings"></p>
+            </fieldset>
+        </form>
     </div>
+
     <!-- footer -->
     <footer>
         <p style="padding-left: 50px;">Contactanos:</p>
         <p style="padding-left: 50px;">Correo: contacto@duocplay.com</p>
         <p style="padding-left: 50px;">Instagram: duocplay.com</p>
     </footer>
+
+    <!-- JS  -->
+
+    <script src="formulario.js"></script>
+    <script src="js_bootstrap/bootstrap.min.js"></script>
 </body>
+
 </html>
