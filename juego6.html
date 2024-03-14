@@ -6,30 +6,49 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="inicio.css">
     <link rel="stylesheet" href="juego.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
     <title>Baldur's Gate 3</title>
 </head>
 
 <body>
     <!-- Barra de navegación -->
-    <ul>
-        <li><a href="inicio.html">
-            <img src="imgs/img_logo.png" style="height: 50px" />
-        </a></li>
-        <div style="float: right;">
-        <li><a href="Formulario.html">Iniciar Sesion</a></li>
-        <li><a href="inicio.html">Categorías</a></li>
-        <li><a href="#">Sobre Nosotros</a></li>
-        <li><a href="#">Contáctanos</a></li>
+    <nav class="navbar navbar-expand-lg w-100" style="background-color: #313131">
+        <div class="container-fluid">
+            <!-- Logo  -->
+            <a class="navbar-brand" href="inicio.html">
+                <img src="imgs/img_logo.png" style="height: 50px" />
+            </a>
+            <!-- Boton para abrir y cerrar barra de navegación  -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- Menú -->
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mb-2 mb-lg-0 d-flex justify-content-end pe-lg-5">
+                    <!-- Categorias -->
+                    <li class="nav-item col-12 col-lg-2 ">
+                        <a class="nav-link active text-white" aria-current="page" href="inicio.html">Categorías</a>
+                    </li>
+                    <!-- Registro de usuario -->
+                    <li class="nav-item col-12 col-lg-2 ">
+                        <a class="nav-link text-white" href="Formulario.html">Registro</a>
+                    </li>
+                </ul>
+            </div>
         </div>
-      </ul>
+    </nav>
     <!-- juego1 -->
     <div class="box_juego">
         <a class="juego_cont" href="">
             <img src="imgs/img_juego_aventura2.jpg" class="juego_subcont1">
             <div class="texto_juego" class="juego_subcont2">
                 <h3>Baldur's Gate 3</h3>
-                <p>Reune a tu grupo y regresa a los Reinos Olvidados en un historia de compañerismo, traicion, sacrificio, supervivencia y la atraccion de un poder absoluto.</p>
-                <p>Un juego de rol para la nueva generación de consolas, ambientado en el mundo de Dungeons & Dragons.</p>
+                <p>Reune a tu grupo y regresa a los Reinos Olvidados en un historia de compañerismo, traicion,
+                    sacrificio, supervivencia y la atraccion de un poder absoluto.</p>
+                <p>Un juego de rol para la nueva generación de consolas, ambientado en el mundo de Dungeons & Dragons.
+                </p>
                 <p>Valor: $39.990 CLP</p>
                 <button class="btn_carrito">Añadir al Carrito</button>
             </div>
@@ -40,7 +59,7 @@
         <p style="padding-left: 50px;">Correo: contacto@duocplay.com</p>
         <p style="padding-left: 50px;">Instagram: duocplay.com</p>
     </footer>
-
+    <script src="js/bootstrap.min.js"></script>
 </body>
 
 </html>

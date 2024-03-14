@@ -6,22 +6,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="inicio.css">
     <link rel="stylesheet" href="categorias.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
     <title>Juegos de Deportes</title>
 </head>
 
 <body>
     <!-- Barra de navegación -->
-    <ul>
-        <li><a href="inicio.html">
-            <img src="imgs/img_logo.png" style="height: 50px" />
-        </a></li>
-        <div style="float: right;">
-        <li><a href="Formulario.html">Iniciar Sesion</a></li>
-        <li><a href="inicio.html">Categorías</a></li>
-        <li><a href="#">Sobre Nosotros</a></li>
-        <li><a href="#">Contáctanos</a></li>
+    <nav class="navbar navbar-expand-lg w-100" style="background-color: #313131">
+        <div class="container-fluid">
+            <!-- Logo  -->
+            <a class="navbar-brand" href="inicio.html">
+                <img src="imgs/img_logo.png" style="height: 50px" />
+            </a>
+            <!-- Boton para abrir y cerrar barra de navegación  -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- Menú -->
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mb-2 mb-lg-0 d-flex justify-content-end pe-lg-5">
+                    <!-- Categorias -->
+                    <li class="nav-item col-12 col-lg-2 ">
+                        <a class="nav-link active text-white" aria-current="page" href="inicio.html">Categorías</a>
+                    </li>
+                    <!-- Registro de usuario -->
+                    <li class="nav-item col-12 col-lg-2 ">
+                        <a class="nav-link text-white" href="Formulario.html">Registro</a>
+                    </li>
+                </ul>
+            </div>
         </div>
-      </ul>
+    </nav>
     <!-- Titulo -->
     <div class="boxbanner">
         <h1 id="titulo_pg1">Juegos de Deportes</h1>
@@ -35,8 +52,10 @@
             <img src="imgs/img_juego_deportes.jpeg" class="juegos_subcont1">
             <div class="juegos_subcont2">
                 <h3>Hot Wheels Unleashed 2 - Turbocharged</h3>
-                <p>Los Coches revolucionan la diversión, Pilotea más de 130 vehículos distintos y con distintas mecánicas.</p>
-                <p>Construye tus pistas en entornos nuevos y asombrosos, disfruta los distintos modos de juego en línea o sin conexión.</p>
+                <p>Los Coches revolucionan la diversión, Pilotea más de 130 vehículos distintos y con distintas
+                    mecánicas.</p>
+                <p>Construye tus pistas en entornos nuevos y asombrosos, disfruta los distintos modos de juego en línea
+                    o sin conexión.</p>
                 <p>Valor: $45.499 CLP</p>
             </div>
         </a>
@@ -45,7 +64,8 @@
             <img src="imgs/img_juego_deportes2.jpg" class="juegos_subcont1">
             <div class="juegos_subcont2">
                 <h3>EA SPORTS FIFA 23</h3>
-                <p>Lleva el juego del mundo al campo con la tecnología HyperMotion 2, Disfruta de la FIFA World Cup masculina y femenina, funciones Cross-Play y mucho más.</p>
+                <p>Lleva el juego del mundo al campo con la tecnología HyperMotion 2, Disfruta de la FIFA World Cup
+                    masculina y femenina, funciones Cross-Play y mucho más.</p>
                 <p>Valor: $55.900 CLP</p>
             </div>
         </a>
@@ -56,6 +76,7 @@
         <p style="padding-left: 50px;">Correo: contacto@duocplay.com</p>
         <p style="padding-left: 50px;">Instagram: duocplay.com</p>
     </footer>
+    <script src="js/bootstrap.min.js"></script>
 </body>
 
 </html>

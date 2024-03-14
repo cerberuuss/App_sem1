@@ -6,26 +6,44 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="inicio.css">
     <link rel="stylesheet" href="categorias.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
     <title>Juegos de Aventura</title>
 </head>
 
 <body>
     <!-- Barra de navegación -->
-    <ul>
-        <li><a href="inicio.html">
-            <img src="imgs/img_logo.png" style="height: 50px" />
-        </a></li>
-        <div style="float: right;">
-        <li><a href="Formulario.html">Iniciar Sesion</a></li>
-        <li><a href="inicio.html">Categorías</a></li>
-        <li><a href="#">Sobre Nosotros</a></li>
-        <li><a href="#">Contáctanos</a></li>
+    <nav class="navbar navbar-expand-lg w-100" style="background-color: #313131">
+        <div class="container-fluid">
+            <!-- Logo  -->
+            <a class="navbar-brand" href="inicio.html">
+                <img src="imgs/img_logo.png" style="height: 50px" />
+            </a>
+            <!-- Boton para abrir y cerrar barra de navegación  -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- Menú -->
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mb-2 mb-lg-0 d-flex justify-content-end pe-lg-5">
+                    <!-- Categorias -->
+                    <li class="nav-item col-12 col-lg-2 ">
+                        <a class="nav-link active text-white" aria-current="page" href="inicio.html">Categorías</a>
+                    </li>
+                    <!-- Registro de usuario -->
+                    <li class="nav-item col-12 col-lg-2 ">
+                        <a class="nav-link text-white" href="Formulario.html">Registro</a>
+                    </li>
+                </ul>
+            </div>
         </div>
-      </ul>
+    </nav>
     <!-- Titulo -->
     <div class="boxbanner">
         <h1 id="titulo_pg1">Juegos de Aventura</h1>
-        <p id="subtit_pg1">Los juegos de aventura son una opción perfecta para aquellos jugadores que buscan una experiencia de juego emocionante y envolvente, con una narrativa profunda y emocionante.</p>
+        <p id="subtit_pg1">Los juegos de aventura son una opción perfecta para aquellos jugadores que buscan una
+            experiencia de juego emocionante y envolvente, con una narrativa profunda y emocionante.</p>
     </div>
     <!-- Juegos -->
     <div class="box_cat">
@@ -34,7 +52,8 @@
             <img src="imgs/img_juego_aventura.jpeg" class="juegos_subcont1">
             <div class="juegos_subcont2">
                 <h3>The Legend of Zelda: Breath of the Wild</h3>
-                <p>Entra en un mundo de descubrimientos, exploración y aventura, viaja por prados, bosques y cumbres montañosas para descubrir que ha sido del asolado reino de Hyrule en esta maravillosa aventura.</p>
+                <p>Entra en un mundo de descubrimientos, exploración y aventura, viaja por prados, bosques y cumbres
+                    montañosas para descubrir que ha sido del asolado reino de Hyrule en esta maravillosa aventura.</p>
                 <p>Valor: $64.990 CLP</p>
             </div>
         </a>
@@ -43,8 +62,10 @@
             <img src="imgs/img_juego_aventura2.jpg" class="juegos_subcont1">
             <div class="juegos_subcont2">
                 <h3>Baldur's Gate 3</h3>
-                <p>Reune a tu grupo y regresa a los Reinos Olvidados en un historia de compañerismo, traicion, sacrificio, supervivencia y la atraccion de un poder absoluto.</p>
-                <p>Un juego de rol para la nueva generación de consolas, ambientado en el mundo de Dungeons & Dragons.</p>
+                <p>Reune a tu grupo y regresa a los Reinos Olvidados en un historia de compañerismo, traicion,
+                    sacrificio, supervivencia y la atraccion de un poder absoluto.</p>
+                <p>Un juego de rol para la nueva generación de consolas, ambientado en el mundo de Dungeons & Dragons.
+                </p>
                 <p>Valor: $39.990 CLP</p>
             </div>
         </a>
@@ -55,6 +76,7 @@
         <p style="padding-left: 50px;">Correo: contacto@duocplay.com</p>
         <p style="padding-left: 50px;">Instagram: duocplay.com</p>
     </footer>
+    <script src="js/bootstrap.min.js"></script>
 </body>
 
 </html>
