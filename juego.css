@@ -1,9 +1,12 @@
+.box_juego {
+    width: 75%;
+    margin-top: 8%;
+    margin-bottom: 9%;
+}
+
 .juego_cont {
     border: 1px solid #ff9900;
     border-radius: 15px;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
     padding: 10px;
     margin-bottom: 30px;
     text-decoration: none;
@@ -19,6 +22,10 @@
     width: 45%;
 }
 
+.imgjuego {
+    height: 400px;
+}
+
 .texto_juego {
     padding: 20px;
     font-size: 120%;
@@ -27,11 +34,11 @@
 .btn_carrito {
     border: none;
     background-color: #ff9900;
-    color:whitesmoke;
+    color: whitesmoke;
     padding: 14px 14px;
     font-size: 90%;
     display: inline-block;
     display: block;
     margin-top: 19%;
-    cursor:pointer;
+    cursor: pointer;
 }

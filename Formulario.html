@@ -40,13 +40,15 @@
     </nav>
 
     <!-- Titulo -->
-    <div class="boxbanner">
-        <h1 id="titulo_pg1">Registro de usuario</h1>
+    <div class="row w-100 d-flex">
+        <div class="col-10 col-md-5 m-auto my-5">
+            <h1 class="text-center">Registro de usuario</h1>
+        </div>
     </div>
 
     <!-- Formulario -->
     <div class="row w-100 d-flex needs-validation" novalidate>
-        <form class="col-8 border m-auto" action="" method="POST" id="formRegistro">
+        <form class="col-10 col-md-8 border m-auto" action="" method="POST" id="formRegistro">
             <fieldset>
                 <legend>Registro de usuario</legend>
                 <!-- Nombre y apellido -->
@@ -69,7 +71,8 @@
                 <!-- Contraseña -->
                 <div class="mb-3">
                     <label for="pass1" class="form-label ">Contraseña:</label>
-                    <input type="password" name="pass1" id="pass1" class="form-control is-invalid" placeholder="Constraseña" required>
+                    <input type="password" name="pass1" id="pass1" class="form-control is-invalid"
+                        placeholder="Constraseña" required>
                     <div class="invalid-feedback">
                         Contraseña debe ser entre 6 y 18 carácteres, con al menos una mayúscula y un número.
                     </div>
@@ -77,10 +80,11 @@
                 <!-- Repetir contraseña -->
                 <div class="mb-3">
                     <label for="pass2" class="form-label ">Repetir contraseña:</label>
-                    <input type="password" name="pass2" id="pass2" class="form-control is-invalid" placeholder="Repetir constraseña" required>
-                        <div class="invalid-feedback">
-                            Contraseñas deben ser iguales.
-                        </div>
+                    <input type="password" name="pass2" id="pass2" class="form-control is-invalid"
+                        placeholder="Repetir constraseña" required>
+                    <div class="invalid-feedback">
+                        Contraseñas deben ser iguales.
+                    </div>
                 </div>
                 <!-- Fecha de nacimiento -->
                 <div class="mb-3">
